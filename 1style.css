@@ -1,0 +1,117 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  background-color: #FAF8EB;
+  color: #5A4535;
+  text-align: center;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'Garlic Demo', sans-serif;
+  font-size: 24px;
+  color: #ED661F;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5A4535;
+  font-weight: 500;
+}
+
+.search-icon input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+main {
+  margin-top: 100px;
+  padding: 50px 20px;
+}
+
+main h1 {
+  font-size: 120px;
+  font-family: 'Garlic Demo', sans-serif;
+  color: #ED661F;
+  margin-bottom: 10px;
+}
+
+main .oops {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main .description {
+  font-size: 16px;
+  color: #7C6A56;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ED661F;
+  color: #FAFBEB;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+    
+
+footer {
+  background-color: #3A201F;
+  color: #FAFBEB;
+  text-align: left;
+  padding: 50px 20px;
+}
+
+.footer-top {
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  font-size: 34px;
+  font-family: "Garlic Demo", sans-serif;
+    text-align: left;
+    color: #ED661F;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer ul li {
+  font-size: 16px;
+  font-weight: 500;
+    text-align: right;
+}

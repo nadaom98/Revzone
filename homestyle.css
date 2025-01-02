@@ -1,0 +1,352 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  background-color: #FAF8EB;
+  color: #5A4535;
+  text-align: center;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'Garlic Demo', sans-serif;
+  font-size: 24px;
+  color: #ED661F;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5A4535;
+  font-weight: 500;
+}
+
+.search-icon input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 14px;
+}
+
+/* intro Section */
+.intro {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #FFF;
+}
+
+.intro h1 {
+  font-size: 50px;
+  color: #ED661F;
+  font-family: "Garlic Demo", sans-serif;
+}
+
+.intro p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.intro button {
+  padding: 15px 30px;
+  background-color: #ED661F;
+  color: #FAFBEB;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Products Section */
+.products {
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.products h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  text-align: center;
+  width: 200px;
+  height: 300px;
+  background-color: #EBE9DA;
+  border: 2px solid #C7C6C3;
+  border-radius: 40px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
+}
+
+.product-item:hover {
+  transform: translateY(-10px); 
+}
+
+.product-item img {
+  width: 100px;
+  height: 100px; 
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.product-item h3, .product-item h4 {
+  font-size: 18px;
+  text-align: left;
+}
+
+.product-item p span {
+  font-weight: bold;
+  color: #ED661F;
+}
+
+.product-item button {
+  padding: 5px 10px;
+  background-color: #ED661F;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease; 
+transform: translateY(-10px); 
+}
+
+.explore-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ED661F;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Features Section */
+.features {
+  background-color: #1A1A1A;
+  color: #ED661F;
+  padding: 40px 60px;
+  text-align: center;
+  font-family: "Garlic Demo", sans-serif;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.feature-box {
+  background-color: #322322;
+  padding: 40px;
+  border-radius: 40px;
+  text-align: left;
+  color: #FAFBEB;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+/* Footer */
+footer {
+  background-color: #3A201F;
+  color: #FAFBEB;
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  font-size: 34px;
+  font-family: "Garlic Demo", sans-serif;
+  text-align: left;
+  color: #ED661F;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer ul li {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .search-icon input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 80%;
+    height: auto;
+  }
+
+  .features {
+    padding: 20px;
+  }
+
+  .feature-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+/*for Mobile */
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 28px;
+  }
+
+  .intro button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .products h2 {
+    font-size: 22px;
+  }
+
+  .footer-logo {
+    font-size: 24px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-family: 'Garlic Demo', sans-serif;
+  color: #ED661F;
+}
+
+/* Menu Icon Styling */
+.menu-icon {
+  display: none; 
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5A4535;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show icon on mobile */
+  }
+
+  .logo {
+    margin: 0 auto; /* Center logo */
+  }
+
+  nav {
+    display: none; /* Hide menu by default */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #FFF;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav ul li {
+    padding: 10px 20px;
+  }
+}
